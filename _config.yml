@@ -6,38 +6,38 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: Peter Kettig
+title: Development engineer
+email: kettig.peter@gmail.com
 # email_title: Email (Email title override)
-phone: Your phone number (optional)
+# phone: +49 (0) 162 3215146 
 # phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
+# website: Your website (eg. https://google.com)(optional)
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-googleplus_username: +jekyll
-orcid_username: 0000-0000-0000-0000
+# twitter_username:petketrb
+github_username: petket-5
+# stackoverflow_username: "00000001"
+# dribbble_username:petket
+# facebook_username:petket
+# flickr_username:petket
+# instagram_username:petket
+linkedin_username: https://www.linkedin.com/in/pkettig/
+# xing_username:petket
+# pinterest_username:petket
+# youtube_username:petket
+# googleplus_username: +jekyll
+orcid_username: 0000-0001-5229-4889
 
 # Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
+# additional_links:
+#- title: Link name
+#  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#  url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -52,45 +52,40 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+ Hi, my name is Peter Kettig, I'm an engineer passionate about space and astronautics. I have been working on developing computer-vision algorithms and full-scale spacecraft ground segments dedicated to earth observation for the past five years.
+ My recent project brought me to monitor climate change and its imapacts on mankind using a variety of space-borne data within the framework of the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+ I enjoy working in a highly technological field and building processing chains that help to better understand the underlying data - I have worked with a range of different languages and frameworks (including AI ones) and I am always looking for opportunities to work with something new.
+ Currently, 
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        title: SCO-FloodDAM (Flood detection, assessment and monitoring)
+        link: https://www.spaceclimateobservatory.org/flooddam-garonne
+        link_text: FloodDAM-link
         quote: >
-          Short overview of the project (optional)
+          Monitoring floods from space
         description: | # this will include new lines to allow paragraphs
           Description about the work on/with the project
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
+        title: Centre national d'études spatiales (CNES)
+        sub_title: Development engineer
+        caption: November 2017 - present
+        link: https://cnes.fr/
+        # quote: >
+        #  Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          I am currently working at CNES as an engineer for the department of earth observation. My roles are a) leading the development of the Data Processing Unit (DPU) of the MicroCarb satellite, dedicated to monitoring CO2-emissions.
+          Within the DPU, there are multiple processing levels that help to translate the raw data into usable scientific measurements and correct for artifacts in the acquisition chain, from Level-0 (raw, compressed CCSDS packets) to Level-3 (Global CO2 maps).
+          As is common in space projects and space agencies in particular, I am coordinating multiple companies that each intervene with their own expertise to help building the ground segment.
+          When I am not taking care of MicroCarb, I spend most of my time in a more downstream-oriented project, called FloodDAM, that aims at monitoring floods and their impact and risk assesment on humans.
+          The project is a joint collaboration of laboratories and industry partners, that leverages satellite and on-ground data from various sources: Optical- and SAR-Imagery, Altimetry, gauge-station networks etc. It is part of the Space for Climte Observatory initative (SCO).
   - title: Education
     layout: list
     content:
@@ -122,7 +117,7 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+ -petket-seo-tag
 
 exclude : [
   "Gemfile",
