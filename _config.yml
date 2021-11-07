@@ -53,7 +53,7 @@ orcid_username: 0000-0001-5229-4889
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
  Hi, my name is Peter Kettig, I'm an engineer passionate about space and astronautics. I have been working on developing computer-vision algorithms and full-scale spacecraft ground segments dedicated to earth observation for the past five years.
- My recent project brought me to monitor climate change and its imapacts on mankind using a variety of space-borne data within the framework of the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
+ My recent project brought me to monitor climate change and its impacts on earth using a variety of space-borne data within the framework of the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
 
  I enjoy working in a highly technological field and building processing chains that help to better understand the underlying data - I have worked with a range of different languages and frameworks (including AI ones) and I am always looking for opportunities to work with something new.
  Currently, 
@@ -63,38 +63,71 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: SCO-FloodDAM (Flood detection, assessment and monitoring)
-        link: https://www.spaceclimateobservatory.org/flooddam-garonne
-        link_text: FloodDAM-link
+        title: SCO-FloodDAM
+        link: spaceclimateobservatory.org/flooddam-garonne
+        link_text: spaceclimateobservatory.org/flooddam
         quote: >
-          Monitoring floods from space
+          Flood detection, assessment and monitoring from space
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          I am lead of this Space for Climate Observatory (SCO) project that aims at detecting and monitoring flood events worldwide.
+          The project is a joint collaboration of laboratories and industry partners, that leverages satellite, airborne and in-situ data of various types:
+          - Optical-, IR- and SAR-Imagery
+          - Altimetry
+          - Gauge-station networks
+          - Auxiliary data (Elevation models, climatology etc.)
+      - layout: right
+        title: MAJA
+        link: github.com/cnes/maja
+        # link_text: Project webpage
+        quote: >
+          Processing chain for atmospheric correction and cloud detection in multi-spectral imagery
+        description: | # this will include new lines to allow paragraphs
+          This computer-vision Level-2 processing chain runs i.a. on Sentinel-2 and Landsat-8 data to correct for atmospheric effects and to reliably detect clouds in each acquisition.
+          At CNES, I am responsable for the development as well as the validation of updates to the algorithm and coordinating its integration into the respective data centers (such as [Theia](https://theia.cnes.fr)/[PEPS](https://peps.cnes.fr)).
+
+          The outputs of MAJA pave the way for [WASP](https://gitlab.orfeo-toolbox.org/remote_modules/wasp), a Level-3 processing chain that creates cloud-free monthly syntheses which I am also responsable of.
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: left
         title: Centre national d'études spatiales (CNES)
         sub_title: Development engineer
         caption: November 2017 - present
-        link: https://cnes.fr/
+        link: cnes.fr
         # quote: >
         #  Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          I am currently working at CNES as an engineer for the department of earth observation. My roles are a) leading the development of the Data Processing Unit (DPU) of the MicroCarb satellite, dedicated to monitoring CO2-emissions.
+          I am currently working at CNES as an engineer for the department of earth observation. 
+          I am managing the development of the Data Processing Unit (DPU) of the MicroCarb satellite, dedicated to monitoring CO2-emissions.
           Within the DPU, there are multiple processing levels that help to translate the raw data into usable scientific measurements and correct for artifacts in the acquisition chain, from Level-0 (raw, compressed CCSDS packets) to Level-3 (Global CO2 maps).
-          As is common in space projects and space agencies in particular, I am coordinating multiple companies that each intervene with their own expertise to help building the ground segment.
-          When I am not taking care of MicroCarb, I spend most of my time in a more downstream-oriented project, called FloodDAM, that aims at monitoring floods and their impact and risk assesment on humans.
-          The project is a joint collaboration of laboratories and industry partners, that leverages satellite and on-ground data from various sources: Optical- and SAR-Imagery, Altimetry, gauge-station networks etc. It is part of the Space for Climte Observatory initative (SCO).
+          
+          As is common in space projects of this scale and space agencies in particular, I am coordinating multiple companies that each intervene with their own expertise to contribute building the ground segment.
+          Organizing acceptance reviews for each new release and making sure the DPU is fully working, validated and integrated into the ground segment for launch are also part of my tasks here.
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: Luleå tekniska universitet, Luleå, Sweden
+        sub_title: Double-degree Master of Science
+        caption: 2015-2017
         quote: >
-          Short institution or course description (optional)
+          Master of space science and technology
+        description: | # this will include new lines to allow paragraphs
+          Description of qualification
+      - layout: top-left
+        title: Université Toulouse III Paul Sabatier, Toulouse, France
+        sub_title: Master of Science
+        caption: 2015-2017
+        quote: >
+          Space science and instrumentation
+        description: | # this will include new lines to allow paragraphs
+          Description of qualification
+      - layout: top-right
+        title: Julius-Maximilians Universität, Würzburg, Germany
+        sub_title: Bachelor of Science
+        caption: 2012-2015
+        quote: >
+          Bachelor in aerospace computer science
         description: | # this will include new lines to allow paragraphs
           Description of qualification
   - title: A Little More About Me
@@ -117,7 +150,7 @@ sass:
   style: compressed
 
 plugins:
- -petket-seo-tag
+ - jekyll-seo-tag
 
 exclude : [
   "Gemfile",
