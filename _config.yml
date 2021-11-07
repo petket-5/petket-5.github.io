@@ -10,7 +10,7 @@ name: Peter Kettig
 title: Development engineer
 email: kettig.peter@gmail.com
 # email_title: Email (Email title override)
-# phone: +49 (0) 162 3215146 
+# phone: +xx (0) xxx xxxxx
 # phone_title: Phone (Phone title override)
 # website: Your website (eg. https://google.com)(optional)
 # website_title: Web (Website title override)
@@ -50,13 +50,12 @@ orcid_username: 0000-0001-5229-4889
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: assets/profile_pic.png
 about_content: | # this will include new lines to allow paragraphs
  Hi, my name is Peter Kettig, I'm an engineer passionate about space and astronautics. I have been working on developing computer-vision algorithms and full-scale spacecraft ground segments dedicated to earth observation for the past five years.
  My recent project brought me to monitor climate change and its impacts on earth using a variety of space-borne data within the framework of the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
 
  I enjoy working in a highly technological field and building processing chains that help to better understand the underlying data - I have worked with a range of different languages and frameworks (including AI ones) and I am always looking for opportunities to work with something new.
- Currently, 
 
 content:
   - title: Projects # Title for the section
@@ -70,7 +69,7 @@ content:
           Flood detection, assessment and monitoring from space
         description: | # this will include new lines to allow paragraphs
           I am lead of this Space for Climate Observatory (SCO) project that aims at detecting and monitoring flood events worldwide.
-          The project is a joint collaboration of laboratories and industry partners, that leverages satellite, airborne and in-situ data of various types:
+          The project is a joint collaboration of laboratories and industry partners, that leverages satellite, airborne and in-situ data of various types to combine them in ML-based processing blocks:
           - Optical-, IR- and SAR-Imagery
           - Altimetry
           - Gauge-station networks
@@ -113,15 +112,26 @@ content:
         quote: >
           Master of space science and technology
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          This erasmus mundus master programme lead me to a double-degree and brought me to three different institutes and countries:
+          - Julius-Maximilians Universität, chair of aerospace computer science in Würzburg, Germany:
+
+            The focus in the first master semester was a team design project to build a suspended satellite mock-up, giving me more insight into how each subsystem interfaces with the rest as well as working together in a team.
+          - Luleå tekniska universitet, Institute for space physics in Kiruna, Sweden:
+
+            One semester of advanced courses on systems engineering for spacecraft and space physics. Given the location above the arctic circle, I also explored northern scandinavia as much as possible - Polar lights and Mid-summer night included.
+          - Université Toulouse III Paul Sabatier, Institute for astrophysics in Toulouse, France:
+
+            My final two semesters of the master, including my thesis (see below) and earning me a double-degree
       - layout: top-left
         title: Université Toulouse III Paul Sabatier, Toulouse, France
         sub_title: Master of Science
         caption: 2015-2017
         quote: >
-          Space science and instrumentation
+          Master (M2) of space technique and instrumentation
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          Specialisation and second year of the master programme with courses in instrumentation and robotics.
+          A voluntary student project in which I participated took us to launch our own high-altitude balloon in southern France - I was in charge of creating the embedded system that would eventually create a temperature, pressure and humidity profile of the atmosphere.
+          My final year thesis was being held at CNES in charge of benchmarking CV libraries for the Euclid science ground segment.
       - layout: top-right
         title: Julius-Maximilians Universität, Würzburg, Germany
         sub_title: Bachelor of Science
@@ -129,13 +139,16 @@ content:
         quote: >
           Bachelor in aerospace computer science
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          During my time at JMU, I had courses on embedded systems for satellites, GNC as well as aeronautical engineering.
+          I also worked as a lab assistant at the institute of aerospace computer science where I had my first contact with actual space systems: A ground station for meteorological-data in which I was tasked to detect anomalies in the received images.
+          During this time, I also took part in teaching the first- and second-semester students, which was a valuable insight on how to get students excited about engineering and science.
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      When I am not working, I enjoy my time outdoors during biking, hiking and climbing adventures in southern France.
+      Football, surfing and snowboarding with friends are also regular activites depending on the season.
+      Outside of sports activities, I am interested in photography, specifically astro-photography as well as more mecanical bits such as working on my bike and car in my free time.
+      I am fluent (CEFR Level C1/C2) in three languages (english, french and german) and working steadily on my fourth (spanish)s.
 
 # Footer
 footer_show_references: true
