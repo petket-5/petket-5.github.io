@@ -1,6 +1,6 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: petket-5/petket-5.github.io
+favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
@@ -26,7 +26,7 @@ github_username: petket-5
 # facebook_username:petket
 # flickr_username:petket
 # instagram_username:petket
-linkedin_username: https://www.linkedin.com/in/pkettig/
+linkedin_username: pkettig
 # xing_username:petket
 # pinterest_username:petket
 # youtube_username:petket
@@ -52,7 +52,7 @@ orcid_username: 0000-0001-5229-4889
 # about_title: About Me (Use this to override about section title)
 about_profile_image: assets/profile_pic.png
 about_content: | # this will include new lines to allow paragraphs
- Hi, my name is Peter Kettig, I'm a space systems architect passionate about satellite communications and Earth observation systems. With over 6 years of experience in the space industry, I specialize in designing, implementing, and validating end-to-end satellite systems and space-based solutions.
+ Hi, my name is Peter Kettig, I'm a space systems architect passionate about satellite communications and Earth observation systems. With over 8 years of experience in the space industry, I specialize in designing, implementing, and validating end-to-end satellite systems and space-based solutions.
  
  Currently, I work at Viasat, where I architect enterprise-scale telecommunications network infrastructure serving millions of users globally across aviation, maritime, and government sectors. Previously, I spent over 6 years at CNES (Centre national d'études spatiales) leading system architecture for critical missions including the MicroCarb CO2-monitoring satellite and emergency response systems through the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
 
@@ -92,7 +92,7 @@ content:
           - Secure, authenticated information delivery systems for critical safety applications
       - layout: left
         title: MicroCarb CO2 Monitoring Satellite
-        link: github.com/cnes/maja
+        link: https://cnes.fr/en/projects/microcarb
         # link_text: Project webpage
         quote: >
           End-to-end satellite system architecture for atmospheric CO2 monitoring
