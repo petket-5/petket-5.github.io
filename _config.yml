@@ -52,56 +52,130 @@ orcid_username: 0000-0001-5229-4889
 # about_title: About Me (Use this to override about section title)
 about_profile_image: assets/profile_pic.png
 about_content: | # this will include new lines to allow paragraphs
- Hi, my name is Peter Kettig, I'm an engineer passionate about space and astronautics. I have been working on developing computer-vision algorithms and full-scale spacecraft ground segments dedicated to earth observation for the past five years.
- My recent project brought me to monitor climate change and its impacts on earth using a variety of space-borne data within the framework of the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
+ Hi, my name is Peter Kettig, I'm a space systems architect passionate about satellite communications and Earth observation systems. With over 6 years of experience in the space industry, I specialize in designing, implementing, and validating end-to-end satellite systems and space-based solutions.
+ 
+ Currently, I work at Viasat, where I architect enterprise-scale telecommunications network infrastructure serving millions of users globally across aviation, maritime, and government sectors. Previously, I spent over 6 years at CNES (Centre national d'études spatiales) leading system architecture for critical missions including the MicroCarb CO2-monitoring satellite and emergency response systems through the [Space for Climate Observatory (SCO)](https://www.spaceclimateobservatory.org).
 
- I enjoy working in a highly technological field and building processing chains that help to better understand the underlying data - I have worked with a range of different languages and frameworks (including AI ones) and I am always looking for opportunities to work with something new.
+ I thrive in highly technological environments, building resilient processing chains and network architectures that translate complex technical requirements into robust operational systems. My experience spans from space segment design to ground segment optimization, always with a focus on mission-critical reliability and international collaboration.
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: QoE-driven network automation
+        # link: viasat.com
+        # link_text: Viasat
+        quote: >
+          Enterprise-scale satellite communications infrastructure design
+        description: | # this will include new lines to allow paragraphs
+          Leading the design and implementation of scalable backend architectures for Viasat's global satellite communications network, serving millions of subscribers across diverse market segments including aviation, maritime, government, and residential broadband services.
+          
+          Key responsibilities include:
+          - Architecting comprehensive Quality of Experience (QoE) monitoring systems processing terabytes of network telemetry data daily
+          - Developing RESTful APIs and automated control systems for real-time network optimization
+          - Implementing cloud-native microservices architecture using Docker, Kubernetes, and AWS services
+          - Ensuring network resilience and security protocols for 24/7 satellite operations
+      - layout: right
         title: SCO-FloodDAM
         link: spaceclimateobservatory.org/flooddam-garonne
         link_text: spaceclimateobservatory.org/flooddam
         quote: >
           Flood detection, assessment and monitoring from space
         description: | # this will include new lines to allow paragraphs
-          I am lead of this Space for Climate Observatory (SCO) project that aims at detecting and monitoring flood events worldwide.
-          The project is a joint collaboration of laboratories and industry partners, that leverages satellite, airborne and in-situ data of various types to combine them in ML-based processing blocks:
-          - Optical-, IR- and SAR-Imagery
-          - Altimetry
-          - Gauge-station networks
-          - Auxiliary data (Elevation models, climatology etc.)
-      - layout: right
-        title: MAJA
+          I led this Space for Climate Observatory (SCO) project that developed comprehensive end-to-end flood monitoring solutions integrating satellite Earth observation data with ground-based IoT sensor networks.
+          
+          The project involved close collaboration with emergency response organizations, civil protection agencies, and government institutions, successfully translating operational requirements into technical system specifications. Key technical components included:
+          - Multi-satellite Earth observation platforms (Sentinel-1/2, Landsat, TerraSAR-X)
+          - Real-time data processing chains on IoT platforms
+          - Geospatial machine learning for flood extent prediction and damage assessment
+          - Secure, authenticated information delivery systems for critical safety applications
+      - layout: left
+        title: MicroCarb CO2 Monitoring Satellite
         link: github.com/cnes/maja
         # link_text: Project webpage
         quote: >
-          Processing chain for atmospheric correction and cloud detection in multi-spectral imagery
+          End-to-end satellite system architecture for atmospheric CO2 monitoring
         description: | # this will include new lines to allow paragraphs
-          This computer-vision Level-2 processing chain runs i.a. on Sentinel-2 and Landsat-8 data to correct for atmospheric effects and to reliably detect clouds in each acquisition.
-          At CNES, I am responsable for the development as well as the validation of updates to the algorithm and coordinating its integration into the respective data centers (such as [Theia](https://theia.cnes.fr)/[PEPS](https://peps.cnes.fr)).
+          As Lead System Architect for the MicroCarb mission at CNES, I designed the complete data processing system for this critical climate monitoring satellite. The project involved architecting technical interfaces between space segment, ground segment, and end-user applications serving the international climate research community.
+          
+          Key achievements included:
+          - Leading multidisciplinary teams of 15+ engineers across 5 companies
+          - Managing over 200 technical specifications throughout the system lifecycle
+          - Ensuring 99.9% system reliability for mission-critical Earth observation data
+          - Coordinating industrial development activities and supply chain management
+          - Advancing technology readiness levels from TRL 6 to TRL 9 for operational deployment
+      - layout: right
+        title: MAJA & WASP
+        link: github.com/cnes/maja
+        # link_text: Project webpage
+        quote: >
+          Atmospheric correction and cloud detection processing chains
+        description: | # this will include new lines to allow paragraphs
+          Led development and validation of MAJA, a computer-vision Level-2 processing chain for atmospheric correction and cloud detection in Sentinel-2 and Landsat-8 multi-spectral imagery. Coordinated integration into major data centers including [Theia](https://theia.cnes.fr) and [PEPS](https://peps.cnes.fr).
 
-          The outputs of MAJA pave the way for [WASP](https://gitlab.orfeo-toolbox.org/remote_modules/wasp), a Level-3 processing chain that creates cloud-free monthly syntheses which I am also responsable of.
+          Also responsible for [WASP](https://gitlab.orfeo-toolbox.org/remote_modules/wasp), a Level-3 processing chain creating cloud-free monthly syntheses, enhancing the operational efficiency of Earth observation data products for scientific and operational users.
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: Centre national d'études spatiales (CNES)
-        sub_title: Development engineer
-        caption: November 2017 - present
-        link: cnes.fr
-        # quote: >
-        #  Short description of the company (optional)
+        title: Viasat Netherlands BV
+        sub_title: Senior Software Engineer
+        caption: June 2023 - Present
+        link: viasat.com
+        quote: >
+          Global telecom network architecture and performance optimization
         description: | # this will include new lines to allow paragraphs
-          I am currently working at CNES as an engineer for the department of earth observation. 
-          I am managing the development of the Data Processing Unit (DPU) of the MicroCarb satellite, dedicated to monitoring CO2-emissions.
-          Within the DPU, there are multiple processing levels that help to translate the raw data into usable scientific measurements and correct for artifacts in the acquisition chain, from Level-0 (raw, compressed CCSDS packets) to Level-3 (Global CO2 maps).
+          Leading the design and implementation of enterprise-scale backend architectures for Viasat's global satellite communications network, serving millions of subscribers across aviation, maritime, government, and residential broadband services.
           
-          As is common in space projects of this scale and space agencies in particular, I am coordinating multiple companies that each intervene with their own expertise to contribute building the ground segment.
-          Organizing acceptance reviews for each new release and making sure the DPU is fully working, validated and integrated into the ground segment for launch are also part of my tasks here.
+          **Key Responsibilities:**
+          - Architect comprehensive Quality of Experience (QoE) monitoring systems processing terabytes of network telemetry data daily
+          - Design RESTful APIs and automated control systems enabling real-time network optimization decisions
+          - Implement cloud-native microservices architecture using Docker, Kubernetes, and AWS services (EC2, S3, RDS, Lambda)
+          - Develop robust failover mechanisms and security protocols ensuring continuous service availability
+          - Lead cross-functional collaboration with satellite operations engineers, RF specialists, and network architects
+          
+          **Technologies:** Docker, K8s, REST APIs, Kibana, Grafana, Splunk, BigQuery, Redshift
+      - layout: right
+        title: Centre national d'études spatiales (CNES)
+        sub_title: Lead Software Engineer & Project Manager
+        caption: May 2019 - June 2023
+        link: cnes.fr
+        quote: >
+          System architecture for satellite missions and emergency response systems
+        description: | # this will include new lines to allow paragraphs
+          Led system architecture and project management for critical space missions including the MicroCarb CO2-monitoring satellite and FloodDAM emergency response systems.
+          
+          **MicroCarb Mission - Lead System Architect:**
+          - Architected complete data processing system defining interfaces between space segment, ground segment, and end-user applications
+          - Led multidisciplinary teams of 15+ engineers across 5 companies
+          - Managed over 200 technical specifications ensuring 99.9% system reliability
+          - Coordinated industrial development activities and supply chain management
+          
+          **FloodDAM Project - Project Manager:**
+          - Developed end-to-end flood monitoring solutions integrating multiple satellite platforms with IoT networks
+          - Collaborated with emergency response organizations and government institutions
+          - Implemented secure real-time data processing chains for critical safety applications
+          
+          **Technologies:** Python, C++, Docker, Kubernetes, PyTorch, TensorFlow, GeoPandas, SQL
+      - layout: left
+        title: Centre national d'études spatiales (CNES)
+        sub_title: Software Engineer
+        caption: November 2017 - May 2019
+        link: cnes.fr
+        quote: >
+          Satellite data processing and ground segment optimization
+        description: | # this will include new lines to allow paragraphs
+          Developed operational satellite imagery processing systems and optimized ground segment software performance for Earth observation missions.
+          
+          **Key Achievements:**
+          - Developed downstream applications using advanced transfer learning approaches
+          - Improved processing time by 60% through algorithm optimization and parallel processing
+          - Designed monitoring tools for satellite and ground segment performance assessment
+          - Contributed to international working groups on satellite data standards
+          - Participated in ESA and CEOS initiatives for data product harmonization
+          
+          **Technologies:** Python, C++, OpenCV, GDAL, OpenMP
   - title: Education
     layout: list
     content:
@@ -110,45 +184,97 @@ content:
         sub_title: Double-degree Master of Science
         caption: 2015-2017
         quote: >
-          Master of space science and technology
+          Master of Space Science and Technology (Erasmus Mundus)
         description: | # this will include new lines to allow paragraphs
-          This erasmus mundus master programme lead me to a double-degree and brought me to three different institutes and countries:
-          - Julius-Maximilians Universität, chair of aerospace computer science in Würzburg, Germany:
-
-            The focus in the first master semester was a team design project to build a suspended satellite mock-up, giving me more insight into how each subsystem interfaces with the rest as well as working together in a team.
-          - Luleå tekniska universitet, Institute for space physics in Kiruna, Sweden:
-
-            One semester of advanced courses on systems engineering for spacecraft and space physics. Given the location above the arctic circle, I also explored northern scandinavia as much as possible - Polar lights and Mid-summer night included.
-          - Université Toulouse III Paul Sabatier, Institute for astrophysics in Toulouse, France:
-
-            My final two semesters of the master, including my thesis (see below) and earning me a double-degree
+          This prestigious Erasmus Mundus master programme provided a comprehensive foundation in space systems engineering across three leading European institutions:
+          
+          **Julius-Maximilians Universität, Würzburg, Germany:**
+          Focused on aerospace computer science with a team design project building a suspended satellite mock-up, providing hands-on experience in subsystem integration and collaborative engineering.
+          
+          **Luleå tekniska universitet, Kiruna, Sweden:**
+          Advanced coursework in spacecraft systems engineering and space physics. Located above the Arctic Circle, this unique experience included studying space weather phenomena and Arctic environmental conditions.
+          
+          **Université Toulouse III Paul Sabatier, Toulouse, France:**
+          Completed thesis on benchmarking computer vision libraries for the Euclid science ground segment, establishing the foundation for my career in space data processing systems.
       - layout: top-left
         title: Université Toulouse III Paul Sabatier, Toulouse, France
         sub_title: Master of Science
-        caption: 2015-2017
+        caption: 2016-2017
         quote: >
-          Master (M2) of space technique and instrumentation
+          Master (M2) of Space Technique and Instrumentation
         description: | # this will include new lines to allow paragraphs
-          Specialisation and second year of the master programme with courses in instrumentation and robotics.
-          A voluntary student project in which I participated took us to launch our own high-altitude balloon in southern France - I was in charge of creating the embedded system that would eventually create a temperature, pressure and humidity profile of the atmosphere.
-          My final year thesis was being held at CNES in charge of benchmarking CV libraries for the Euclid science ground segment.
+          Specialization in space instrumentation and robotics with practical experience in atmospheric science research. 
+          
+          Led the embedded systems development for a high-altitude balloon mission in southern France, creating temperature, pressure, and humidity profiling systems. This project provided valuable experience in autonomous data collection systems and environmental monitoring techniques relevant to satellite-based Earth observation missions.
+          
       - layout: top-right
         title: Julius-Maximilians Universität, Würzburg, Germany
         sub_title: Bachelor of Science
         caption: 2012-2015
         quote: >
-          Bachelor in aerospace computer science
+          Bachelor in Aerospace Computer Science
         description: | # this will include new lines to allow paragraphs
-          During my time at JMU, I had courses on embedded systems for satellites, GNC as well as aeronautical engineering.
-          I also worked as a lab assistant at the institute of aerospace computer science where I had my first contact with actual space systems: A ground station for meteorological-data in which I was tasked to detect anomalies in the received images.
-          During this time, I also took part in teaching the first- and second-semester students, which was a valuable insight on how to get students excited about engineering and science.
+          Comprehensive foundation in embedded systems for satellites, guidance, navigation & control (GNC), and aeronautical engineering.
+          
+          Gained practical experience as a lab assistant at the Institute of Aerospace Computer Science, working with operational space systems including a ground station for meteorological data processing. Developed skills in anomaly detection for satellite imagery and contributed to undergraduate education, enhancing communication and technical mentoring abilities.
+          
+          This experience provided early exposure to real-world space operations and established my passion for space-based Earth observation systems.
+
+  - title: Publications & Research
+    layout: list
+    content:
+      - layout: top-left
+        title: "The SCO-FloodDAM Project: New Observing Strategies for Flood Detection, Alert and Rapid Mapping"
+        sub_title: IEEE International Geoscience and Remote Sensing Symposium (IGARSS)
+        caption: 2021
+        link: https://doi.org/10.1109/IGARSS47720.2021.9553036
+        quote: >
+          **Peter Kettig**, Simon Baillarin, et al.
+        description: | # this will include new lines to allow paragraphs
+          Presented novel approaches for integrating satellite Earth observation data with ground-based IoT networks for real-time flood monitoring and emergency response. This work demonstrates the practical implementation of space-based solutions for critical safety applications.
+          
+          **Key Contributions:** System architecture for multi-source data integration, real-time processing chains, and user community engagement strategies for emergency response organizations.
+      - layout: top-right
+        title: "Improving Future Optical Earth Observation Products Using Transfer Learning"
+        sub_title: EGU General Assembly Conference Abstracts
+        caption: 2020
+        link: https://doi.org/10.5194/egusphere-egu2020-9983
+        quote: >
+          **Peter Kettig**, Eduardo Sanchez-Diaz, et al.
+        description: | # this will include new lines to allow paragraphs
+          Investigated the application of advanced machine learning techniques to enhance the quality and processing speed of satellite imagery products. This research contributed to improving operational Earth observation capabilities and reducing time-to-delivery for critical environmental monitoring applications.
+          
+          **Impact:** Advanced state-of-the-art in satellite data processing, enabling faster response times for environmental monitoring and climate research applications.
+      - layout: top-left
+        title: "Developing Image Processing Chains for the Theia Land Data Centre"
+        sub_title: Proceedings of Big Data from Space (European Commission)
+        caption: 2019
+        link: https://doi.org/10.2760/848593
+        quote: >
+          **Peter Kettig**, Joelle Donadieu, et al.
+        description: | # this will include new lines to allow paragraphs
+          Designed and implemented near real-time multi-satellite image processing chains for the Theia land data centre, focusing on operational efficiency and data product quality. This work established foundations for large-scale Earth observation data processing infrastructure.
+          
+          **Technical Achievement:** Developed scalable processing architectures capable of handling multiple satellite data streams simultaneously while maintaining near real-time performance for operational users.
+      - layout: top-right
+        title: "Benchmarking C++ Image Processing Libraries for the Euclid Science Ground Segment"
+        sub_title: Proceedings of Big Data from Space (European Commission)
+        caption: 2017
+        link: https://doi.org/10.2760/383579
+        quote: >
+          **Peter Kettig**, Antoine Basset, et al.
+        description: | # this will include new lines to allow paragraphs
+          Conducted comprehensive performance analysis of computer vision libraries for ESA's Euclid mission ground segment, establishing benchmarks for processing efficiency and reliability. This early research laid the groundwork for my subsequent work in satellite data processing systems.
+
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      When I am not working, I enjoy my time outdoors during biking, hiking and climbing adventures in southern France.
-      Football, surfing and snowboarding with friends are also regular activites depending on the season.
-      Outside of sports activities, I am interested in photography, specifically astro-photography as well as more mecanical bits such as working on my bike and car in my free time.
-      I am fluent (CEFR Level C1/C2) in three languages (english, french and german) and working steadily on my fourth (spanish).
+      When I'm not architecting satellite systems, I enjoy exploring the outdoors through biking, hiking, and climbing adventures across Europe. Living in the Netherlands has opened up new cycling routes and activities, while my time in southern France provided excellent opportunities for surfing on the beach and snowboarding in the Pyrenees.
+      
+      I'm passionate about photography, particularly astrophotography, which connects my professional interest in space with artistic expression. I also enjoy working on mechanical projects, maintaining my bike and car, and exploring new technologies in my spare time.
+      
+      As someone who values international collaboration, I'm fluent in four languages: German (native), English and French (C1/C2 level), and Spanish (B2 level), with basic Dutch (A2) that I'm actively improving during my time in the Netherlands.
+
 
 # Footer
 footer_show_references: true
