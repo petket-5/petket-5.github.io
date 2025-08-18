@@ -229,7 +229,7 @@ content:
         caption: 2021
         link: https://doi.org/10.1109/IGARSS47720.2021.9553036
         quote: >
-          **Peter Kettig**, Simon Baillarin, et al.
+          Peter Kettig, Simon Baillarin, et al.
         description: | # this will include new lines to allow paragraphs
           Presented novel approaches for integrating satellite Earth observation data with ground-based IoT networks for real-time flood monitoring and emergency response. This work demonstrates the practical implementation of space-based solutions for critical safety applications.
           
@@ -240,7 +240,7 @@ content:
         caption: 2020
         link: https://doi.org/10.5194/egusphere-egu2020-9983
         quote: >
-          **Peter Kettig**, Eduardo Sanchez-Diaz, et al.
+          Peter Kettig, Eduardo Sanchez-Diaz, et al.
         description: | # this will include new lines to allow paragraphs
           Investigated the application of advanced machine learning techniques to enhance the quality and processing speed of satellite imagery products. This research contributed to improving operational Earth observation capabilities and reducing time-to-delivery for critical environmental monitoring applications.
           
@@ -251,7 +251,7 @@ content:
         caption: 2019
         link: https://doi.org/10.2760/848593
         quote: >
-          **Peter Kettig**, Joelle Donadieu, et al.
+          Peter Kettig, Joelle Donadieu, et al.
         description: | # this will include new lines to allow paragraphs
           Designed and implemented near real-time multi-satellite image processing chains for the Theia land data centre, focusing on operational efficiency and data product quality. This work established foundations for large-scale Earth observation data processing infrastructure.
           
@@ -262,7 +262,7 @@ content:
         caption: 2017
         link: https://doi.org/10.2760/383579
         quote: >
-          **Peter Kettig**, Antoine Basset, et al.
+          Peter Kettig, Antoine Basset, et al.
         description: | # this will include new lines to allow paragraphs
           Conducted comprehensive performance analysis of computer vision libraries for ESA's Euclid mission ground segment, establishing benchmarks for processing efficiency and reliability. This early research laid the groundwork for my subsequent work in satellite data processing systems.
 
